@@ -11,7 +11,6 @@ Some problems include
  - It's not hosted on https
  - trade password encryption done client side in java script, trivial to break
  - encryption is sha1 done in javascript which has been proven to be broken several times
- - database username and password stored in the code (though not uploaded to github at least)
  
  There is nothing sensitive to lose at the moment so it isn't a real issue
  
