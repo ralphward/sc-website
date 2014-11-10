@@ -1,0 +1,38 @@
+ErrorDocument 400 http://buddy/shimara/index.php
+ErrorDocument 403 http://buddy/shimara/index.php
+ErrorDocument 404 http://buddy/shimara/index.php
+
+Options -Indexes
+
+<Limit GET>
+order allow,deny
+deny from 85.140.206.9
+deny from 92.48.122.3
+deny from 78.46.197.81
+allow from all
+</Limit>
+
+Redirect 301 /index.htm http://buddy/shimara/index.php
+Redirect 301 /mailing.htm http://buddy/shimara/index.php
+Redirect 301 /outlets.htm http://buddy/shimara/stockists.php
+Redirect 301 /about.htm http://buddy/shimara/aboutme.php
+Redirect 301 /artistscv.htm http://buddy/shimara/visitors.php
+Redirect 301 /contact1.htm http://buddy/shimara/contact.php
+Redirect 301 /calendar.htm http://buddy/shimara/calendar.php
+Redirect 301 /tradeintro.htm http://buddy/shimara/trade/index.php
+Redirect 301 /jewellery/jewelleryneck01.htm http://buddy/shimara/gallery.php?r=jewell&s=neckpiece
+Redirect 301 /jewellery/jewellery01.htm http://buddy/shimara/gallery.php?r=jewell&s=neckpiece
+Redirect 301 /jewellery/jewellerybangles01.htm http://buddy/shimara/gallery.php?r=jewell&s=bangles
+Redirect 301 /jewellery/jewelleryearrings01.htm http://buddy/shimara/gallery.php?r=jewell&s=earring
+Redirect 301 /jewellery/jewellerybrooches01.htm http://buddy/shimara/gallery.php?r=jewell&s=pendants
+Redirect 301 /jewellery/jewelleryrings01.htm http://buddy/shimara/gallery.php?r=jewell
+Redirect 301 /jewellery/jewelleryrings02.htm http://buddy/shimara/gallery.php?r=jewell&s=rings2
+Redirect 301 /jewellery/jewelleryrings03.htm http://buddy/shimara/gallery.php?r=jewell&s=rings3
+Redirect 301 /silver/silverbowls01.htm http://buddy/shimara/gallery.php?r=silver
+Redirect 301 /silver/silvertableware01.htm http://buddy/shimara/gallery.php?r=silver&s=tblware
+Redirect 301 /silver/silvergumnuts01.htm http://buddy/shimara/gallery.php?r=silver&s=gumnut
+Redirect 301 /silver/silvervases01.htm http://buddy/shimara/gallery.php?r=silver&s=vases
+Redirect 301 /silver/silvervessels01.htm http://buddy/shimara/gallery.php?r=silver&s=vessels
+
+
+
